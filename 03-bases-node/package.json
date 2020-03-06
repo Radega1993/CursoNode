@@ -1,0 +1,14 @@
+{
+  "name": "03-bases-node",
+  "version": "1.0.0",
+  "description": "Esta es una app de línea de comandos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul de Arriba",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^15.1.0"
+  }
+}
