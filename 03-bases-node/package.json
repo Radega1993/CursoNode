@@ -9,6 +9,7 @@
   "author": "Raul de Arriba",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.4.0",
     "yargs": "^15.1.0"
   }
 }
