@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.set('useCreateIndex', true);
 const uniqueValidator = require('mongoose-unique-validator');
 
 let rolesValidos = {
@@ -8,7 +9,7 @@ let rolesValidos = {
 
 let Schema = mongoose.Schema;
 
-let usuarioSchema  = new Schema({
+let usuarioSchema = new Schema({
   nombre: {
     type: String,
     required: [true, 'El nombre es necesario']
@@ -49,6 +50,8 @@ usuarioSchema.methods.toJSON = function() {
   return userObject
 }
 
-usuarioSchema.plugin(uniqueValidator, { message: '{PATH} debe de ser único'})
+usuarioSchema.plugin(uniqueValidator, {
+  message: '{PATH} debe de ser único'
+})
 
 module.exports = mongoose.model('Usuario', usuarioSchema);
