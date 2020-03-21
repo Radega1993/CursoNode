@@ -30,7 +30,7 @@ process.env.SEED = process.env.SEED || 'secret';
 if (process.env.NODE_ENV !== 'dev') {
   urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-  urlDB = 'mongodb+srv://radega:x94PVhEyFifhlc46@cluster0-zxfbn.mongodb.net/cafe';
+  urlDB = '';
 }
 
 process.env.URLDB = urlDB
