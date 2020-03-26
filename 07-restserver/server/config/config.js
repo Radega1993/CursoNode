@@ -30,7 +30,7 @@ process.env.SEED = process.env.SEED || 'secret';
 if (process.env.NODE_ENV !== 'dev') {
   urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-  urlDB = '';
+  urlDB = 'link mongo';
 }
 
 process.env.URLDB = urlDB
